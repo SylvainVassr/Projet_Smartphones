@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Vue1">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapView"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/mapView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/versVue2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/versVue2" />
+
+            <Button
+                android:id="@+id/versVue3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/versVue3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/vitesse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingTop="5dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="5dp"
+                android:text="vitesse bateau" />
+
+            <TextView
+                android:id="@+id/txt_lat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp"
+                android:text="Latitude"
+                />
+            <TextView
+                android:id="@+id/txt_lon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp"
+                android:text="Longitude"
+                />
+            <TextView
+                android:id="@+id/txt_vtsv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp"
+                android:text="Vitesse vent"
+                />
+            <TextView
+                android:id="@+id/txt_dirv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp"
+                android:text="Direction vent"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

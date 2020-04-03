@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Projetdrone</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="versVue1">Simulation</string>
+    <string name="versVue2">Pilotage</string>
+    <string name="versVue3">Waypoints</string>
+</resources>
