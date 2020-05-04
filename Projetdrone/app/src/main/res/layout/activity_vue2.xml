@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".Vue2">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="@string/versVue1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/toView1" android:layout_weight="1"/>
+            <Button
+                android:text="@string/versVue3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/toView3" android:layout_weight="1"/>
+        </LinearLayout>
+        <fragment
+            android:id="@+id/mapView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment" android:layout_weight="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:text="Home"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:paddingRight="10dp"
+                android:id="@+id/buttonHome" android:background="@android:color/holo_green_light"
+                android:textColor="@android:color/white" android:textSize="35sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:text="URGENCE"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:paddingRight="10dp"
+                android:id="@+id/buttonEmergency" android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white" android:textSize="35sp"/>
+        </fragment>
+    </LinearLayout>
 </RelativeLayout>

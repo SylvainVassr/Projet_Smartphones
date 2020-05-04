@@ -4,4 +4,6 @@
     <string name="versVue1">Simulation</string>
     <string name="versVue2">Pilotage</string>
     <string name="versVue3">Waypoints</string>
+    <string name="drawLines">Affiche le tracé</string>
+    <string name="clear">Nettoyer la carte</string>
 </resources>

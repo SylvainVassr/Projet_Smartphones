@@ -38,6 +38,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Vue2">
+        </activity>
+        <activity android:name=".Vue3">
+        </activity>
+
     </application>
 
 </manifest>
